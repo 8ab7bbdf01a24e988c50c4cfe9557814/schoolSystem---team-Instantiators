@@ -8,3 +8,5 @@ class Person:
     return self.name
   def setname(self, name):
     self.name = name
+  def info(self, name):
+    print(name)
