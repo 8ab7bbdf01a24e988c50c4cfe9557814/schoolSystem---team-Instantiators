@@ -17,3 +17,11 @@ from teacher import *
 
 #The mainline program code 
 #Test the classes by adding one object of each and interacting with their methods to ensure they behave correctly
+person=Person("Person!")
+print(person.info())
+
+staff=Staff("Staff", 13090)
+print(staff.info())
+staff.giveRaise(1000)
+print(staff.info())
+
