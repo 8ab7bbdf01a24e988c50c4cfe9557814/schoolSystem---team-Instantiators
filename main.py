@@ -2,7 +2,15 @@
 
 #Import classes from external files - the first one is done - you add the rest
 from headTeacher import *
-
+from highSchoolStudent import *
+from mark import *
+from person import *
+from primaryStudent import *
+from staff import *
+from student import *
+from subject import *
+from task import *
+from teacher import *
 
 #Define any subprograms you might need here
 
