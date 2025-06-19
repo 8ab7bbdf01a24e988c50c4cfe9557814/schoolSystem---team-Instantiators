@@ -5,5 +5,6 @@
 class Teacher:
   def __init__(self, salary, subjects):
     self.subjects = []
-  def enroll(subjects):
-    
+  def enroll(self, subjects):
+    self.subject = subject
+    self.subjects = subjects.append(subject)
