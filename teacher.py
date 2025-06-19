@@ -8,3 +8,5 @@ class Teacher:
   def enroll(self, subjects):
     self.subject = subject
     self.subjects = subjects.append(subject)
+  def info(self, name, salary, subjects):
+    print(f"name: " + name + "salary: " + salary + "subjects: " + subjects)
