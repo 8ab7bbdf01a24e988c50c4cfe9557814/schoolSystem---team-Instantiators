@@ -4,9 +4,11 @@
 
 class Teacher:
   def __init__(self, salary, subjects):
-    self.subjects = []
+    self.subjects = subjects
+    self.salary = salary
   def enroll(self, subjects):
-    self.subject = subject
-    self.subjects = subjects.append(subject)
+    self.subjects.append(subject)
   def info(self, name, salary, subjects):
-    print(f"name: " + name + "salary: " + salary + "subjects: " + subjects)
+    print("name:" + name)
+    print("salary:" + self.salary)
+    print("subjects:", ", ".join(self.subjects))
