@@ -9,13 +9,13 @@ class Task:
     self.marks = {}
   def setmark(self, student, mark):
     self.marks[student] = mark 
-  def getmark(self, mark):
-    return self.mark
-  def info(self, name):
-    print(f"This task is " + self.name)
-  def Max(self, marks):
-    highest = max(marks)
-  def Avg(self, marks):
-    median = sum(marks) / len(marks)
-  def Min(self, marks):
-    lowest = min(marks)
+  def getmark(self, student):
+    return self.marks.get(student, "No mark found")
+  def info(self):
+    print(f"This task is '{self.name}' and is out of {self.maxMark} marks.")
+  def Max(self):
+    return max(self.marks.values()) if self.marks else None
+  def Avg(self):
+    return sum(self.marks.values()) / len(self.marks) if self.marks else None
+  def Min(self):
+    return min(self.marks.values()) if self.marks else None
